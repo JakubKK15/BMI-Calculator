@@ -15,6 +15,7 @@ The following BMI categories are used to interpret the results:
 - BMI between 18.5 and 24.9: Normal Weight
 - BMI between 25 and 29.9: Overweight
 - BMI 30 or greater: Obese
+
 Please keep in mind that BMI is just one indicator of health, and it is always best to consult a healthcare professional for a comprehensive evaluation of your health and well-being.
 
 ## Resources
