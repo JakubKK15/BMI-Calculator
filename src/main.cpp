@@ -1,6 +1,49 @@
 #include <iostream>
 #include <iomanip>
 
+/**
+ * Calculate the Body Mass Index (BMI) given the weight and height.
+ * 
+ * @param weight The weight of the person in kilograms.
+ * @param height The height of the person in meters.
+ * @return The calculated BMI.
+ */
+double calculate_bmi(double weight, double height)
+{
+    // Calculate BMI using the formula: weight / (height * height)
+    return weight / (height * height);
+}
+
+
+/**
+ * Returns the description of a person's BMI category based on their BMI value.
+ *
+ * @param bmi The BMI value of the person.
+ * @return The description of the BMI category.
+ */
+std::string bmi_description(double bmi)
+{
+    // Check if the person is underweight
+    if (bmi < 18.5)
+    {
+        return "underweight";
+    }
+    // Check if the person has normal weight
+    else if (bmi < 25)
+    {
+        return "normal weight";
+    }
+    // Check if the person is overweight
+    else if (bmi < 30)
+    {
+        return "overweight";
+    }
+    // The person is obese
+    else
+    {
+        return "obese";
+    }
+}
 
 /*
     This program calculates the user's BMI based on their weight and height.
@@ -26,26 +69,12 @@ int main()
 
     double height = height_cm / 100.0;
 
-    double bmi = weight / (height * height);
+    double bmi = calculate_bmi(weight, height);
     std::cout << std::fixed;
     std::cout << std::setprecision(2);
 
-    std::string description;
+    std::string description = bmi_description(bmi);
 
-    if (bmi < 18.5)
-    {
-        description = "underweight";
-    } else if (bmi < 25)
-    {
-        description = "normal weight";
-    } else if (bmi < 30)
-    {
-        description = "overweight";
-    } else
-    {
-        description = "obese";
-    }
-    
     std::cout << "Your BMI is " << bmi << ", which shows that you are " << description << "." << std::endl;
 
     return 0;
