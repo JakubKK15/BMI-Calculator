@@ -2,11 +2,11 @@
 This is a simple BMI (Body Mass Index) Calculator written in C++. The program calculates the user's BMI based on their weight and height and provides a brief interpretation of the result. Please note that this calculator doesn't take into account age or gender, and the BMI categories used are for adults 20 years old and older.
 
 ## How to Use
-Run the program by compiling and executing the provided C++ code.
-The program will prompt you to enter your name.
-Next, you will be asked to enter your weight in kilograms.
-Finally, you will be asked to enter your height in centimeters.
-The program will then calculate your BMI and display the result along with a message indicating which category it falls into.
+1. Run the program by compiling and executing the provided C++ code.
+2. The program will prompt you to enter your name.
+3. Next, you will be asked to enter your weight in kilograms.
+4. Finally, you will be asked to enter your height in centimeters.
+5. The program will then calculate your BMI and display the result along with a message indicating which category it falls into.
 
 ## BMI Categories
 The following BMI categories are used to interpret the results:
