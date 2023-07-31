@@ -29,22 +29,24 @@ int main()
     double bmi = weight / (height * height);
     std::cout << std::fixed;
     std::cout << std::setprecision(2);
-    std::cout << "Your BMI is " << bmi << std::endl;
+
+    std::string description;
 
     if (bmi < 18.5)
     {
-        std::cout << "Your BMI shows that you are underweight." << std::endl;
+        description = "underweight";
     } else if (bmi < 25)
     {
-        std::cout << "Your BMI shows that you are normal weight." << std::endl;
+        description = "normal weight";
     } else if (bmi < 30)
     {
-        std::cout << "Your BMI shows that you are overweight." << std::endl;
+        description = "overweight";
     } else
     {
-        std::cout << "Your BMI shows that you are obese." << std::endl;
+        description = "obese";
     }
     
+    std::cout << "Your BMI is " << bmi << ", which shows that you are " << description << "." << std::endl;
 
     return 0;
 }
